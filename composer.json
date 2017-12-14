@@ -1,0 +1,14 @@
+{
+  "name": "Ecommerce Project",
+  "license": "proprietary",
+  "type": "project",
+  "description": "Ecommerce application",
+  "autoload": {
+    "psr-0": {
+      "": "src/"
+    }
+  },
+  "require": {
+    "gabordemooij/redbean": "dev-master"
+  }
+}
