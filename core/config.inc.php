@@ -14,3 +14,8 @@ define('DB_PASSWORD', 'test123');
  */
 
 define('READBEAN_MODEL_PREFIX', '\\Ecommerce\\Model\\');
+/**
+ * Ecommerce configuration
+ */
+define('DEFAULT_CONTROLLER', 'Product');
+define('DEFAULT_ACTION', 'index');

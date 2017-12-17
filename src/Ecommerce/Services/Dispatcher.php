@@ -8,19 +8,20 @@ class Dispatcher
     public function __construct()
     {
         $this->parameters = $_GET;
+        $this->viewer = new Viewer();
     }
 
     public function dispatcher()
     {
-        $controller = $this->parameters['controller'];
-        $action = $this->parameters['action'];
-        $viewPath = sprintf('../Views/%s/%s.html.twig', ucfirst($controller), $action);
-        $template = sprintf('%s/%s.html.twig', ucfirst($controller), $action);
-        if (!file_exists(__DIR__ . "/" . $viewPath))
-            throw new \Exception("File $viewPath not found");
+        $paramaters = $this->extractParamControlleurAndAction();
+        $this->viewer->setParameters($paramaters)->render();
+    }
 
-        $loader = new \Twig_Loader_Filesystem(__DIR__ . '/../Views');
-        $twig = new \Twig_Environment($loader);
-        echo $twig->render($template);
+    public function extractParamControlleurAndAction()
+    {
+
+        $controller = array_key_exists('controller', $this->parameters) ? $this->parameters['controller'] : DEFAULT_CONTROLLER;
+        $action = array_key_exists('action', $this->parameters) ? $this->parameters['action'] : DEFAULT_ACTION;
+        return [$controller, $action];
     }
 }

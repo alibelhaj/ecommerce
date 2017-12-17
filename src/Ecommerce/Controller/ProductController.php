@@ -5,7 +5,7 @@ class ProductController
 {
     public function indexAction()
     {
-
+        exit;
     }
 
     public function addAction()
