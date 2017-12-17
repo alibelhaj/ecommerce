@@ -2,7 +2,7 @@
 
 namespace Ecommerce\Repository;
 
-class ProductRepository
+class ProductRepository  extends BaseRepository
 {
     const TYPE = "product";
 

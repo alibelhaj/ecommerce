@@ -2,7 +2,7 @@
 
 namespace Ecommerce\Model;
 
-class Customer extends \RedBean_SimpleModel
+class Customer extends BaseModel
 {
     public $firstname;
     public $lastname;

@@ -2,7 +2,7 @@
 
 namespace Ecommerce\Model;
 
-class Product extends \RedBean_SimpleModel
+class Product extends BaseModel
 {
     public $name;
     public $price;

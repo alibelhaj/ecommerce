@@ -1,7 +1,8 @@
 <?php
+
 namespace Ecommerce\Model;
 
-class Category extends \RedBean_SimpleModel
+class Category extends BaseModel
 {
     public $name;
     public $slug;
