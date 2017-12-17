@@ -11,18 +11,15 @@ class ProductDataFixtures extends BaseDataFixtures
     {
         return [
             array(
-                'firstname' => 'Ali',
-                'lastname' => 'Belhaj',
-                'email' => 'ali.belhadjj@gmail.com',
-                'password' => '123456',
-                'active' => true,
-            ), array(
-                'firstname' => 'Test',
-                'lastname' => 'Test',
-                'email' => 'test@gmail.com',
-                'password' => '123456',
-                'active' => true,
+                "name" => "Ali",
+                "slug" => "Be",
+                "active" => true
             ),
+            array(
+                "name" => "Samsung",
+                "slug" => "samsung",
+                "active" => true
+            )
         ];
     }
 }

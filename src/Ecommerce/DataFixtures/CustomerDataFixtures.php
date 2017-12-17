@@ -12,15 +12,18 @@ class CustomerDataFixtures  extends BaseDataFixtures
     {
         return [
             array(
-                "name" => "Appele",
-                "slug" => "appele",
-                "active" => true
+                'firstname' => 'Ali',
+                'lastname' => 'Belhaj',
+                'email' => 'ali.belhadjj@gmail.com',
+                'password' => '123456',
+                'active' => true,
+            ), array(
+                'firstname' => 'Test',
+                'lastname' => 'Test',
+                'email' => 'test@gmail.com',
+                'password' => '123456',
+                'active' => true,
             ),
-            array(
-                "name" => "Samsung",
-                "slug" => "samsung",
-                "active" => true
-            )
         ];
     }
 }
