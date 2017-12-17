@@ -7,6 +7,7 @@ class ProductDataFixtures extends BaseDataFixtures
     {
         return "product";
     }
+
     public function getFixtures()
     {
         return [
